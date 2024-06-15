@@ -1,17 +1,47 @@
-// Update this page (the content is just a fallback if you fail and example)
-// Use chakra-ui
-import { Container, Text, VStack } from "@chakra-ui/react";
+import { Container, VStack, Button, Grid, GridItem, Text } from "@chakra-ui/react";
+import { useState } from "react";
 
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+const sounds = [
+  { id: 1, name: "Kick", color: "red.400" },
+  { id: 2, name: "Snare", color: "blue.400" },
+  { id: 3, name: "Hi-Hat", color: "green.400" },
+  { id: 4, name: "Clap", color: "yellow.400" },
+  { id: 5, name: "Tom", color: "purple.400" },
+  { id: 6, name: "Cymbal", color: "orange.400" },
+];
 
 const Index = () => {
+  const [playing, setPlaying] = useState(null);
+
+  const playSound = (sound) => {
+    setPlaying(sound.name);
+    // Here you would add the logic to play the actual sound
+    setTimeout(() => setPlaying(null), 200); // Reset after 200ms for visual feedback
+  };
+
   return (
     <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
       <VStack spacing={4}>
-        <Text fontSize="2xl">Your Blank Canvas</Text>
-        <Text>Chat with the agent to start making edits.</Text>
+        <Text fontSize="2xl">Soundboard</Text>
+        <Text>Click on the buttons to play sounds</Text>
+        <Grid templateColumns="repeat(3, 1fr)" gap={6}>
+          {sounds.map((sound) => (
+            <GridItem key={sound.id}>
+              <Button
+                size="lg"
+                height="100px"
+                width="100px"
+                bg={sound.color}
+                onClick={() => playSound(sound)}
+                _hover={{ bg: `${sound.color}.600` }}
+                _active={{ bg: `${sound.color}.700` }}
+              >
+                {sound.name}
+              </Button>
+            </GridItem>
+          ))}
+        </Grid>
+        {playing && <Text fontSize="lg">Playing: {playing}</Text>}
       </VStack>
     </Container>
   );
