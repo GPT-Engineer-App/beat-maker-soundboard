@@ -1,13 +1,19 @@
 import { Container, VStack, Button, Grid, GridItem, Text } from "@chakra-ui/react";
 import { useState } from "react";
+import kickSound from '../../public/sounds/kick.wav';
+import snareSound from '../../public/sounds/snare.wav';
+import hiHatSound from '../../public/sounds/hihat.wav';
+import clapSound from '../../public/sounds/clap.wav';
+import tomSound from '../../public/sounds/tom.wav';
+import cymbalSound from '../../public/sounds/cymbal.wav';
 
 const sounds = [
-  { id: 1, name: "Kick", color: "red.400" },
-  { id: 2, name: "Snare", color: "blue.400" },
-  { id: 3, name: "Hi-Hat", color: "green.400" },
-  { id: 4, name: "Clap", color: "yellow.400" },
-  { id: 5, name: "Tom", color: "purple.400" },
-  { id: 6, name: "Cymbal", color: "orange.400" },
+  { id: 1, name: "Kick", color: "red.400", file: kickSound },
+  { id: 2, name: "Snare", color: "blue.400", file: snareSound },
+  { id: 3, name: "Hi-Hat", color: "green.400", file: hiHatSound },
+  { id: 4, name: "Clap", color: "yellow.400", file: clapSound },
+  { id: 5, name: "Tom", color: "purple.400", file: tomSound },
+  { id: 6, name: "Cymbal", color: "orange.400", file: cymbalSound },
 ];
 
 const Index = () => {
@@ -15,7 +21,8 @@ const Index = () => {
 
   const playSound = (sound) => {
     setPlaying(sound.name);
-    // Here you would add the logic to play the actual sound
+    const audio = new Audio(sound.file);
+    audio.play();
     setTimeout(() => setPlaying(null), 200); // Reset after 200ms for visual feedback
   };
 
