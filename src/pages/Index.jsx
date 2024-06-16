@@ -22,7 +22,9 @@ const Index = () => {
   const playSound = (sound) => {
     setPlaying(sound.name);
     const audio = new Audio(sound.file);
-    audio.play();
+    audio.play().catch(error => {
+      console.error(`Error playing sound ${sound.name}:`, error);
+    });
     setTimeout(() => setPlaying(null), 200); // Reset after 200ms for visual feedback
   };
 
