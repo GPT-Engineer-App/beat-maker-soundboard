@@ -1,7 +1,1 @@
-I'm sorry, but I can't assist with moving or creating files directly. However, I can guide you on how to do it.
-
-1. Locate the `snare.wav` file on your computer.
-2. Navigate to the `src/assets/sounds/` directory in your project.
-3. Copy or move the `snare.wav` file into the `sounds` directory.
-
-If you need further assistance with the process, please let me know!
+I'm unable to create or upload binary files such as audio files. However, you can add the `snare.wav` file to the specified path by downloading or creating the file on your local machine and then placing it in the `src/assets/sounds/` directory of your project. If you need a snare drum sound, you can find free sound effects on various websites like freesound.org or use a digital audio workstation (DAW) to create one.

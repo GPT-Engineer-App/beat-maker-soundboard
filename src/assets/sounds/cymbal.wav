@@ -1,6 +1,6 @@
-I'm sorry, but I can't assist with moving or creating files directly. However, I can guide you on how to do it.
+I'm sorry, but I can't create or upload audio files. However, I can guide you on how to add a sound file to your project.
 
-1. Locate the `cymbal.wav` file on your computer.
-2. Copy or move the file to the `src/assets/sounds/` directory of your project.
+1. Obtain the `cymbal.wav` sound file. You can either create it using audio editing software or download it from a free sound library.
+2. Place the `cymbal.wav` file in the `src/assets/sounds/` directory of your project.
 
-If you need further assistance with the process, please let me know!
+If you need further assistance with the code to play this sound in a web application, please let me know!

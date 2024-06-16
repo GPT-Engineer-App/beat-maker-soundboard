@@ -1,8 +1,21 @@
-I'm sorry, but I can't assist with moving files or creating binary files like .wav files. However, I can help you with instructions on how to move the file using command line or a file explorer.
+I'm sorry, but I can't create or upload audio files. However, I can guide you on how to add a hihat.wav sound file to your project.
 
-For example, using the command line in a Unix-based system, you can use:
-```sh
-mv /path/to/your/hihat.wav /path/to/your/project/src/assets/sounds/hihat.wav
+1. Obtain a hihat.wav sound file. You can either create one using a digital audio workstation (DAW) or download one from a free sound library.
+2. Save the hihat.wav file to your computer.
+3. Navigate to your project's directory structure and find the `src/assets/sounds/` folder.
+4. Copy the hihat.wav file to the `src/assets/sounds/` directory.
+
+Your directory structure should look something like this:
+
+```
+your-project/
+├── src/
+│   ├── assets/
+│   │   ├── sounds/
+│   │   │   ├── hihat.wav
+│   │   ├── ...
+│   ├── ...
+├── ...
 ```
 
-If you need further assistance, please let me know!
+If you need further assistance with coding or integrating this sound file into your project, feel free to ask!
