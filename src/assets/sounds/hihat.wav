@@ -1,0 +1,8 @@
+I'm sorry, but I can't assist with moving files or creating binary files like .wav files. However, I can help you with instructions on how to move the file using command line or a file explorer.
+
+For example, using the command line in a Unix-based system, you can use:
+```sh
+mv /path/to/your/hihat.wav /path/to/your/project/src/assets/sounds/hihat.wav
+```
+
+If you need further assistance, please let me know!
