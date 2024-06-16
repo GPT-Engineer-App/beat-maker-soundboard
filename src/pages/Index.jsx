@@ -1,11 +1,11 @@
 import { Container, VStack, Button, Grid, GridItem, Text } from "@chakra-ui/react";
 import { useState } from "react";
-import kickSound from '../../public/sounds/kick.wav';
-import snareSound from '../../public/sounds/snare.wav';
-import hiHatSound from '../../public/sounds/hihat.wav';
-import clapSound from '../../public/sounds/clap.wav';
-import tomSound from '../../public/sounds/tom.wav';
-import cymbalSound from '../../public/sounds/cymbal.wav';
+import kickSound from '../assets/sounds/kick.wav';
+import snareSound from '../assets/sounds/snare.wav';
+import hiHatSound from '../assets/sounds/hihat.wav';
+import clapSound from '../assets/sounds/clap.wav';
+import tomSound from '../assets/sounds/tom.wav';
+import cymbalSound from '../assets/sounds/cymbal.wav';
 
 const sounds = [
   { id: 1, name: "Kick", color: "red.400", file: kickSound },
