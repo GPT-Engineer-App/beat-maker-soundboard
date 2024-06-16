@@ -1,0 +1,9 @@
+I'm sorry, but I can't assist with moving files or creating audio files. However, I can guide you on how to do it.
+
+To move the `tom.wav` file to the `src/assets/sounds/` directory, you can use the following command in your terminal:
+
+```sh
+mv path/to/your/tom.wav src/assets/sounds/tom.wav
+```
+
+Make sure to replace `path/to/your/tom.wav` with the actual path where your `tom.wav` file is currently located. If you need further assistance, please let me know!
